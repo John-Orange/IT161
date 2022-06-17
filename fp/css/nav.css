@@ -1,38 +1,61 @@
 /* Global rules */
 .topnav {
+    display: flex;
     margin: auto;
-    background-color: rgb(95,95,95);
-    overflow: auto;
+    background: rgb(189, 111, 111);
+    align-items: center;
 }
-
 
 .topnav a {
-    float: left;
-    display: block;
-    color: whitesmoke;
-    text-align: center;
-    padding: 12px 12px;
     text-decoration: none;
+    color: rgba(0,0,0,0.8);
+    margin: auto;
+    font-size: 20px;
+    padding: 20px 20px;
     text-transform: capitalize;
-    font-size: 16px;
 }
 
-
-.topnav a.hover, .active {
-    background-color: darkcyan;
+.active {
+    font-style: italic;
 }
 
 .topnav .icon {
     display: none;
 }
 
-/* Responsive rules - apply when screen width is less than 1200px*/
+.logo{
+    padding: 60px 60px;
+    margin: auto;
+    background-image: url(../images/icon.jpg);
+    background-size: cover;
+    border: 3px solid black;
+
+  }
+
+.center {
+    text-align:center;
+}
+
+.menu {
+    background-color: lightskyblue;
+    color: white;
+    padding: 15px 35px;
+    font-size: 26px;
+    border-radius: 40px;
+}
+
+.menu:hover {
+    color:black;
+    background-color: darkred;
+}
+
+/* Responsive rules - apply when screen width is less than 1200px 
 
 @media screen and (max-width: 1199px) {
     .topnav a:not(:first-child) {
         display: none;
     }
-
+    
     .topnav a.icon {
         float: right;
         display: block;
@@ -55,6 +78,7 @@
     }
 }
 
+
 /* DESKTOP */
 @media all and (min-width:1200px) {
     .topnav {
@@ -73,5 +97,6 @@
 @media all and (max-width:500px) {
     .topnav {
         width: 100%;
+        float: none;
     }
 }

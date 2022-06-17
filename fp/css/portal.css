@@ -3,26 +3,32 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 
 html {
-    background-color: lightgray;
+    background-color: lightgrey;
     font-family: 'Quicksand', sans-serif;
-    font-size: 0.95em;
-    line-height: 1.5em;
+    font-size: 1em;
+    line-height: 2em;
+    background-image: url(../images/bg.png);
+    background-size: cover;
+
 }
+
 
 ::selection {
     color: #000; 
-    background: #ff0;
+    background: #f67;
 }
 
 h1 {
     font-weight: normal;
     margin: auto;
     background: white;
-    line-height: 2.5em;
+    line-height: 6.5em;
+    background-image: url(../images/JL.PNG);
+    background-size: cover;
 }
 
 div.wrapper {
-    background-color: white;
+    background-color: rgb(157, 207, 134);
     overflow: auto;
 }
 
@@ -35,6 +41,9 @@ h2, h3 {
     font-weight: normal;
     margin-left: 1em;
     line-height: 1em;
+    color: red;
+    text-align: center;
+    padding: 12px 12px;
 }
 
 a {
@@ -43,24 +52,73 @@ a {
 }
 
 a:hover {
-    color: whitesmoke;
-    background-color: darkcyan;
-    text-decoration: none;
+    text-decoration: underline;
+    color: darkred;
+    font-style: italic;
+
+
 }
-/*
+
+
+
 iframe {
     display: block;
     margin: auto;
-    width: 90%;
-    height: 5700px;
-    border: 2px solid darkcyan;
+    width: 100%;
+    height: 350px;
 }
-*/
 
 footer {
+    background-color: white;
     clear: both;
     text-align: center;
     padding: 1em;
+}
+
+img {
+    width: 100%;
+    justify-content: space-around;
+    padding-top:5%
+}
+
+.contact-info {
+    border: 2px solid darkcyan;
+    background-color: lightyellow;
+    display: block;
+}
+
+div.gallery {
+    border:1px solid black;
+}
+
+div.gallery:hover {
+    border:1px solid white;
+    background-color: lightsalmon;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding:15px;
+    text-align:center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float:left;
+    width: 24.99%
+}
+
+img.gallerysize {
+    height: 50px;
+    width: 50px;
 }
 
 /* Responsive rules */
@@ -92,6 +150,8 @@ footer {
     }
 }
 
+
+
 /* TABLET */
 @media all and (min-width:501px) and (max-width:1199px) {
     div.wrapper {
@@ -113,6 +173,12 @@ footer {
     img.desktop, img.phone {
         display: none;
     }
+
+    .responsive {
+        width:49.99%;
+        margin: 6px 0;
+    }
+
 }
 
 /* PHONE */
@@ -133,4 +199,19 @@ footer {
     img.desktop, img.tablet {
         display: none;
     }
+
+    div.logo {
+        display: none;
+    }
+
+    .responsive {
+        width:100%
+    }
+
+    .clearfix:after {
+        content: "";
+        display:table;
+        clear:both;
+    }
+
 }
