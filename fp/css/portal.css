@@ -19,13 +19,20 @@ html {
 }
 
 h1 {
-    font-weight: normal;
+    font-weight: bold;
+    text-align: center;
     margin: auto;
-    background: white;
+    line-height: 3.5em;
+}
+
+
+.toppic {
     line-height: 6.5em;
     background-image: url(../images/JL.PNG);
     background-size: cover;
 }
+
+
 
 div.wrapper {
     background-color: rgb(157, 207, 134);
@@ -116,10 +123,7 @@ div.desc {
     width: 24.99%
 }
 
-img.gallerysize {
-    height: 50px;
-    width: 50px;
-}
+
 
 /* Responsive rules */
 
