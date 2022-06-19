@@ -15,7 +15,7 @@
         <h1 class="toppic"> &nbsp; </h1>
         <nav class="topnav" id="myTopnav">
                 <a href="template.html">Home</a>
-                <a href="gallery.html" >Gallery</a>
+                <a href="template.html#gallery" >Gallery</a>
                 <div class="logo"></div>
                 <a href="menu.html">Menu</a>
                 <a href="contact.php" class="active">Contact</a>  
@@ -73,7 +73,7 @@
             Zhongyuan, All Rights Reserved ~ 
             <a id="html-checker" href="#" target="_blank">Check HTML</a> ~ 
             <a id="css-checker" href="#" target="_blank">Check CSS</a>~
-            <a link href="disclaimer.html">Disclaimer</a></small>
+            <a href="disclaimer.html">Disclaimer</a></small>
         </p>
     </footer>
   </div>

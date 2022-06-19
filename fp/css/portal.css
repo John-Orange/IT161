@@ -27,7 +27,7 @@ h1 {
 
 
 .toppic {
-    line-height: 6.5em;
+    line-height: 6.8em;
     background-image: url(../images/JL.PNG);
     background-size: cover;
 }
@@ -210,6 +210,10 @@ div.desc {
 
     .responsive {
         width:100%
+    }
+
+    .toppic {
+        line-height: 4em;
     }
 
     .clearfix:after {

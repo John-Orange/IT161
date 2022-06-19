@@ -4,6 +4,8 @@
     margin: auto;
     background: rgb(189, 111, 111);
     align-items: center;
+    border: 1px solid black;
+
 }
 
 .topnav a {
@@ -48,6 +50,12 @@
     color:black;
     background-color: darkred;
 }
+
+.gallerypage{
+    background-color: lightblue;
+}
+
+
 
 /* Responsive rules - apply when screen width is less than 1200px 
 
